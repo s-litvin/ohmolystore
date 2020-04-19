@@ -7,7 +7,7 @@ return [
 
     'layouts' => [
         'my-account' => 'My Account',
-        'profile' => 'Profile',
+        'profile' => 'Профиль',
         'address' => 'Address',
         'reviews' => 'Reviews',
         'wishlist' => 'Wishlist',
@@ -34,10 +34,10 @@ return [
         'sign-in' => 'Sign In',
         'sign-up' => 'Sign Up',
         'account' => 'Account',
-        'cart' => 'Cart',
-        'profile' => 'Profile',
+        'cart' => 'Корзина',
+        'profile' => 'Профиль',
         'wishlist' => 'Wishlist',
-        'cart' => 'Cart',
+        'cart' => 'Корзина',
         'logout' => 'Logout',
         'search-text' => 'Search products here'
     ],
@@ -45,7 +45,7 @@ return [
     'minicart' => [
         'view-cart' => 'View Shopping Cart',
         'checkout' => 'Checkout',
-        'cart' => 'Cart',
+        'cart' => 'Корзина',
         'zero' => '0'
     ],
 
@@ -165,8 +165,8 @@ return [
 
             'profile' => [
                 'index' => [
-                    'page-title' => 'Profile',
-                    'title' => 'Profile',
+                    'page-title' => 'Профиль',
+                    'title' => 'Профиль',
                     'edit' => 'Edit',
                 ],
 
