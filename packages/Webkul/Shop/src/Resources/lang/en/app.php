@@ -44,7 +44,7 @@ return [
 
     'minicart' => [
         'view-cart' => 'View Shopping Cart',
-        'checkout' => 'Checkout',
+        'checkout' => 'Оформить',
         'cart' => 'Корзина',
         'zero' => '0'
     ],
@@ -53,7 +53,7 @@ return [
         'subscribe-newsletter' => 'Subscribe Newsletter',
         'subscribe' => 'Subscribe',
         'locale' => 'Locale',
-        'currency' => 'Currency',
+        'currency' => 'Валюта',
     ],
 
     'subscription' => [
@@ -69,9 +69,9 @@ return [
 
     'search' => [
         'no-results' => 'No Results Found',
-        'page-title' => config('app.name') . ' - Search',
-        'found-results' => 'Search Results Found',
-        'found-result' => 'Search Result Found'
+        'page-title' => config('app.name') . ' - Поиск',
+        'found-results' => 'Результаты поиска',
+        'found-result' => 'Результат поиска'
     ],
 
     'reviews' => [
@@ -99,7 +99,7 @@ return [
         'signup-form' => [
             'page-title' => 'Create New Customer Account',
             'title' => 'Sign Up',
-            'firstname' => 'First Name',
+            'firstname' => 'Имя',
             'lastname' => 'Last Name',
             'email' => 'Email',
             'password' => 'Password',
@@ -174,7 +174,7 @@ return [
                 'edit-fail' => 'Error! Profile cannot be updated, please try again later.',
                 'unmatch' => 'The old password does not match.',
 
-                'fname' => 'First Name',
+                'fname' => 'Имя',
                 'lname' => 'Last Name',
                 'gender' => 'Gender',
                 'other' => 'Other',
@@ -214,7 +214,7 @@ return [
                 'create' => [
                     'page-title' => 'Add Address Form',
                     'company_name' => 'Company name',
-                    'first_name' => 'First name',
+                    'first_name' => 'Имя',
                     'last_name' => 'Last name',
                     'vat_id' => 'Vat id',
                     'vat_help_note' => '[Note: Use Country Code with VAT Id. Eg. INV01234567891]',
@@ -223,7 +223,7 @@ return [
                     'country' => 'Country',
                     'state' => 'State',
                     'select-state' => 'Select a region, state or province',
-                    'city' => 'City',
+                    'city' => 'Город',
                     'postcode' => 'Postal Code',
                     'phone' => 'Phone',
                     'submit' => 'Save Address',
@@ -234,7 +234,7 @@ return [
                 'edit' => [
                     'page-title' => 'Edit Address',
                     'company_name' => 'Company name',
-                    'first_name' => 'First name',
+                    'first_name' => 'Имя',
                     'last_name' => 'Last name',
                     'vat_id' => 'Vat id',
                     'title' => 'Edit Address',
@@ -255,7 +255,7 @@ return [
                     'title' => 'Orders',
                     'order_id' => 'Order ID',
                     'date' => 'Date',
-                    'status' => 'Status',
+                    'status' => 'Статус',
                     'total' => 'Total',
                     'order_number' => 'Order Number',
                     'processing' => 'Processing',
@@ -319,7 +319,7 @@ return [
             'wishlist' => [
                 'page-title' => 'Wishlist',
                 'title' => 'Wishlist',
-                'deleteall' => 'Delete All',
+                'deleteall' => 'Удалить все',
                 'moveall' => 'Move All Products To Cart',
                 'move-to-cart' => 'Move To Cart',
                 'error' => 'Cannot add product to wishlist due to unknown problems, please checkback later',
@@ -342,7 +342,7 @@ return [
                 'order-id' => 'Order Id',
                 'date' => 'Date',
                 'name' => 'Title',
-                'status' => 'Status',
+                'status' => 'Статус',
                 'pending' => 'Pending',
                 'available' => 'Available',
                 'expired' => 'Expired',
@@ -368,7 +368,7 @@ return [
         'layered-nav-title' => 'Shop By',
         'price-label' => 'As low as',
         'remove-filter-link-title' => 'Clear All',
-        'sort-by' => 'Sort By',
+        'sort-by' => 'Сортировать по',
         'from-a-z' => 'From A-Z',
         'from-z-a' => 'From Z-A',
         'newest-first' => 'Newest First',
@@ -394,7 +394,7 @@ return [
         'add-to-cart' => 'Add To Cart',
         'buy-now' => 'Buy Now',
         'whoops' => 'Whoops!',
-        'quantity' => 'Quantity',
+        'quantity' => 'Количество',
         'in-stock' => 'In Stock',
         'out-of-stock' => 'Out Of Stock',
         'view-all' => 'View All',
@@ -432,19 +432,19 @@ return [
                 'qty_impossible' => 'Cannot add more than one of these products to cart.'
             ],
             'create-error' => 'Encountered some issue while making cart instance.',
-            'title' => 'Shopping Cart',
+            'title' => 'Корзина',
             'empty' => 'Your shopping cart is empty',
             'update-cart' => 'Update Cart',
             'continue-shopping' => 'Continue Shopping',
             'proceed-to-checkout' => 'Proceed To Checkout',
-            'remove' => 'Remove',
-            'remove-link' => 'Remove',
+            'remove' => 'Убрать',
+            'remove-link' => 'Убрать',
             'move-to-wishlist' => 'Move to Wishlist',
             'move-to-wishlist-success' => 'Item moved to wishlist successfully.',
             'move-to-wishlist-error' => 'Cannot move item to wishlist, please try again later.',
             'add-config-warning' => 'Please select option before adding to cart.',
             'quantity' => [
-                'quantity' => 'Quantity',
+                'quantity' => 'Количество',
                 'success' => 'Cart Item(s) successfully updated.',
                 'illegal' => 'Quantity cannot be lesser than one.',
                 'inventory_warning' => 'The requested quantity is not available, please try again later.',
@@ -465,7 +465,7 @@ return [
         ],
 
         'onepage' => [
-            'title' => 'Checkout',
+            'title' => 'Оформить',
             'information' => 'Information',
             'shipping' => 'Shipping',
             'payment' => 'Payment',
@@ -473,11 +473,11 @@ return [
             'billing-address' => 'Billing Address',
             'sign-in' => 'Sign In',
             'company-name' => 'Company Name',
-            'first-name' => 'First Name',
+            'first-name' => 'Имя',
             'last-name' => 'Last Name',
             'email' => 'Email',
             'address1' => 'Street Address',
-            'city' => 'City',
+            'city' => 'Город',
             'state' => 'State',
             'select-state' => 'Select a region, state or province',
             'postcode' => 'Zip/Postcode',
@@ -492,7 +492,7 @@ return [
             'payment-method' => 'Payment Method',
             'summary' => 'Order Summary',
             'price' => 'Price',
-            'quantity' => 'Quantity',
+            'quantity' => 'Количество',
             'billing-address' => 'Billing Address',
             'shipping-address' => 'Shipping Address',
             'contact' => 'Contact',
@@ -558,7 +558,7 @@ return [
             'shipping' => 'Shipping Method',
             'payment' => 'Payment Method',
             'price' => 'Price',
-            'quantity' => 'Quantity',
+            'quantity' => 'Количество',
             'subtotal' => 'Subtotal',
             'shipping-handling' => 'Shipping & Handling',
             'tax' => 'Tax',
