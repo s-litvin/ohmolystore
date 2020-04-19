@@ -683,10 +683,10 @@ return [
     'settings' => [
         'locales' => [
             'title' => 'Локализации',
-            'add-title' => 'Add Locale',
+            'add-title' => 'Добавить локаль',
             'edit-title' => 'Edit Locale',
             'add-title' => 'Add Locale',
-            'save-btn-title' => 'Save Locale',
+            'save-btn-title' => 'Сохранить локаль',
             'general' => 'General',
             'code' => 'Код',
             'name' => 'Имя',
