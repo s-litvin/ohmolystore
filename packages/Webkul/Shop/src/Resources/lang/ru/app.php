@@ -181,7 +181,7 @@ return [
                 'male' => 'Male',
                 'female' => 'Female',
                 'dob' => 'Date Of Birth',
-                'phone' => 'Phone',
+                'phone' => 'Телефон' ,
                 'email' => 'Email',
                 'opassword' => 'Old Password',
                 'password' => 'Password',
@@ -225,7 +225,7 @@ return [
                     'select-state' => 'Select a region, state or province',
                     'city' => 'Город' ,
                     'postcode' => 'Postal Code',
-                    'phone' => 'Phone',
+                    'phone' => 'Телефон' ,
                     'submit' => 'Save Address',
                     'success' => 'Address have been successfully added.',
                     'error' => 'Address cannot be added.'
