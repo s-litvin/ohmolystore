@@ -135,7 +135,7 @@ class Core
 
         $cacheKey = 'channel_host.' . request()->getHttpHost(); 
         $channel = Cache::remember($cacheKey, now()->addHours(10), 
-           function() use ($user) {
+           function() {
 
                 self::$channel = $this->channelRepository->findWhereIn('hostname', [
                     request()->getHttpHost(),
