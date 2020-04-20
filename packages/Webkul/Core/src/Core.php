@@ -132,17 +132,24 @@ class Core
             return self::$channel;
         }
 
-        self::$channel = $this->channelRepository->findWhereIn('hostname', [
-            request()->getHttpHost(),
-            'http://' . request()->getHttpHost(),
-            'https://' . request()->getHttpHost(),
-        ])->first();
+        $cacheKey = 'channel_host.' . request()->getHttpHost(); 
+        $channel = Cache::remember($cacheKey, now()->addHours(10), 
+           function() use ($user) {
 
-        if (! self::$channel) {
-            self::$channel = $this->channelRepository->first();
-        }
+                self::$channel = $this->channelRepository->findWhereIn('hostname', [
+                    request()->getHttpHost(),
+                    'http://' . request()->getHttpHost(),
+                    'https://' . request()->getHttpHost(),
+                ])->first();
 
-        return self::$channel;
+                if (! self::$channel) {
+                    self::$channel = $this->channelRepository->first();
+                }
+
+               return self::$channel;
+        });
+
+        return $channel;
     }
 
     /**
