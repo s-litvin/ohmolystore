@@ -12,7 +12,6 @@ use Webkul\Core\Repositories\ChannelRepository;
 use Webkul\Core\Repositories\LocaleRepository;
 use Webkul\Core\Repositories\CoreConfigRepository;
 use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Cache;
 
 class Core
 {
@@ -133,24 +132,17 @@ class Core
             return self::$channel;
         }
 
-        $cacheKey = 'channel_host.' . request()->getHttpHost(); 
-        $channel = Cache::remember($cacheKey, now()->addHours(10), 
-           function() {
+        self::$channel = $this->channelRepository->findWhereIn('hostname', [
+            request()->getHttpHost(),
+            'http://' . request()->getHttpHost(),
+            'https://' . request()->getHttpHost(),
+        ])->first();
 
-                self::$channel = $this->channelRepository->findWhereIn('hostname', [
-                    request()->getHttpHost(),
-                    'http://' . request()->getHttpHost(),
-                    'https://' . request()->getHttpHost(),
-                ])->first();
+        if (! self::$channel) {
+            self::$channel = $this->channelRepository->first();
+        }
 
-                if (! self::$channel) {
-                    self::$channel = $this->channelRepository->first();
-                }
-
-               return self::$channel;
-        });
-
-        return $channel;
+        return self::$channel;
     }
 
     /**
