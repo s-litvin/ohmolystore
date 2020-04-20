@@ -8,10 +8,10 @@ return [
     'layouts' => [
         'my-account' => 'My Account',
         'profile' => 'Профиль',
-        'address' => 'Address',
-        'reviews' => 'Reviews',
+        'address' => 'Адрес',
+        'reviews' => 'Отзывы',
         'wishlist' => 'Wishlist',
-        'orders' => 'Orders',
+        'orders' => 'Заказы',
         'downloadable-products' => 'Downloadable Products'
     ],
 
@@ -29,21 +29,21 @@ return [
     ],
 
     'header' => [
-        'title' => 'Account',
+        'title' => 'Аккаунт',
         'dropdown-text' => 'Manage Cart, Orders & Wishlist',
-        'sign-in' => 'Sign In',
-        'sign-up' => 'Sign Up',
-        'account' => 'Account',
-        'cart' => 'КорзинА',
+        'sign-in' => 'Войти',
+        'sign-up' => 'Зарегистрироваться',
+        'account' => 'Аккаунт',
+        'cart' => 'Корзина',
         'profile' => 'Профиль',
         'wishlist' => 'Wishlist',
-        'cart' => 'КорзинАА',
-        'logout' => 'Logout',
-        'search-text' => 'Search products here'
+        'cart' => 'Корзина',
+        'logout' => 'Выход',
+        'search-text' => 'Поиск'
     ],
 
     'minicart' => [
-        'view-cart' => 'View Shopping Cart',
+        'view-cart' => 'Перейти в корзину',
         'checkout' => 'Оформить',
         'cart' => 'Корзина',
         'zero' => '0'
@@ -51,14 +51,14 @@ return [
 
     'footer' => [
         'subscribe-newsletter' => 'Subscribe Newsletter',
-        'subscribe' => 'Subscribe',
-        'locale' => 'Locale',
+        'subscribe' => 'Подписка',
+        'locale' => 'Язык/Lang',
         'currency' => 'Валюта',
     ],
 
     'subscription' => [
         'unsubscribe' => 'Unsubcribe',
-        'subscribe' => 'Subscribe',
+        'subscribe' => 'Подписка',
         'subscribed' => 'You are now subscribed to subscription emails.',
         'not-subscribed' => 'You can not be subscribed to subscription emails, please try again later.',
         'already' => 'You are already subscribed to our subscription list.',
@@ -69,13 +69,13 @@ return [
 
     'search' => [
         'no-results' => 'No Results Found',
-        'page-title' => config('app.name') . ' - Поиск',
-        'found-results' => 'Результаты поиска',
-        'found-result' => 'Результат поиска'
+        'page-title' => config('app.name') . ' - Search',
+        'found-results' => 'Search Results Found',
+        'found-result' => 'Search Result Found'
     ],
 
     'reviews' => [
-        'title' => 'Title',
+        'title' => 'Название',
         'add-review-page-title' => 'Add Review',
         'write-review' => 'Write a review',
         'review-title' => 'Give your review a title',
@@ -87,25 +87,25 @@ return [
         'star' => 'Star',
         'percentage' => ':percentage %',
         'id-star' => 'star',
-        'name' => 'Name',
+        'name' => 'Имя',
     ],
 
     'customer' => [
         'signup-text' => [
             'account_exists' => 'Already have an account',
-            'title' => 'Sign In'
+            'title' => 'Войти'
         ],
 
         'signup-form' => [
             'page-title' => 'Create New Customer Account',
-            'title' => 'Sign Up',
+            'title' => 'Зарегистрироваться',
             'firstname' => 'Имя',
-            'lastname' => 'Last Name',
+            'lastname' => 'Фамилия',
             'email' => 'Email',
             'password' => 'Password',
             'confirm_pass' => 'Confirm Password',
-            'button_title' => 'Register',
-            'agree' => 'Agree',
+            'button_title' => 'Регистрация',
+            'agree' => 'Согласен',
             'terms' => 'Terms',
             'conditions' => 'Conditions',
             'using' => 'by using this website',
@@ -125,16 +125,16 @@ return [
 
         'login-text' => [
             'no_account' => 'Do not have account',
-            'title' => 'Sign Up',
+            'title' => 'Зарегистрироваться',
         ],
 
         'login-form' => [
             'page-title' => 'Customer Login',
-            'title' => 'Sign In',
+            'title' => 'Войти',
             'email' => 'Email',
             'password' => 'Password',
             'forgot_pass' => 'Forgot Password?',
-            'button_title' => 'Sign In',
+            'button_title' => 'Войти',
             'remember' => 'Remember Me',
             'footer' => '© Copyright :year Webkul Software, All rights reserved',
             'invalid-creds' => 'Please check your credentials and try again.',
@@ -175,7 +175,7 @@ return [
                 'unmatch' => 'The old password does not match.',
 
                 'fname' => 'Имя',
-                'lname' => 'Last Name',
+                'lname' => 'Фамилия',
                 'gender' => 'Gender',
                 'other' => 'Other',
                 'male' => 'Male',
@@ -196,8 +196,8 @@ return [
 
             'address' => [
                 'index' => [
-                    'page-title' => 'Address',
-                    'title' => 'Address',
+                    'page-title' => 'Адрес',
+                    'title' => 'Адрес',
                     'add' => 'Add Address',
                     'edit' => 'Edit',
                     'empty' => 'You do not have any saved addresses here, please try to create it by clicking the link below',
@@ -215,7 +215,7 @@ return [
                     'page-title' => 'Add Address Form',
                     'company_name' => 'Company name',
                     'first_name' => 'Имя',
-                    'last_name' => 'Last name',
+                    'last_name' => 'Фамилия',
                     'vat_id' => 'Vat id',
                     'vat_help_note' => '[Note: Use Country Code with VAT Id. Eg. INV01234567891]',
                     'title' => 'Add Address',
@@ -223,7 +223,7 @@ return [
                     'country' => 'Country',
                     'state' => 'State',
                     'select-state' => 'Select a region, state or province',
-                    'city' => 'Город',
+                    'city' => 'City',
                     'postcode' => 'Postal Code',
                     'phone' => 'Phone',
                     'submit' => 'Save Address',
@@ -235,7 +235,7 @@ return [
                     'page-title' => 'Edit Address',
                     'company_name' => 'Company name',
                     'first_name' => 'Имя',
-                    'last_name' => 'Last name',
+                    'last_name' => 'Фамилия',
                     'vat_id' => 'Vat id',
                     'title' => 'Edit Address',
                     'street-address' => 'Street Address',
@@ -251,11 +251,11 @@ return [
 
             'order' => [
                 'index' => [
-                    'page-title' => 'Orders',
-                    'title' => 'Orders',
+                    'page-title' => 'Заказы',
+                    'title' => 'Заказы',
                     'order_id' => 'Order ID',
                     'date' => 'Date',
-                    'status' => 'Статус',
+                    'status' => 'Status',
                     'total' => 'Total',
                     'order_number' => 'Order Number',
                     'processing' => 'Processing',
@@ -275,7 +275,7 @@ return [
                     'invoices' => 'Invoices',
                     'shipments' => 'Shipments',
                     'SKU' => 'SKU',
-                    'product-name' => 'Name',
+                    'product-name' => 'Имя',
                     'qty' => 'Qty',
                     'item-status' => 'Item Status',
                     'item-ordered' => 'Ordered (:qty_ordered)',
@@ -319,7 +319,7 @@ return [
             'wishlist' => [
                 'page-title' => 'Wishlist',
                 'title' => 'Wishlist',
-                'deleteall' => 'Удалить все',
+                'deleteall' => 'Delete All',
                 'moveall' => 'Move All Products To Cart',
                 'move-to-cart' => 'Move To Cart',
                 'error' => 'Cannot add product to wishlist due to unknown problems, please checkback later',
@@ -341,8 +341,8 @@ return [
                 'title' => 'Downloadable Products',
                 'order-id' => 'Order Id',
                 'date' => 'Date',
-                'name' => 'Title',
-                'status' => 'Статус',
+                'name' => 'Название',
+                'status' => 'Status',
                 'pending' => 'Pending',
                 'available' => 'Available',
                 'expired' => 'Expired',
@@ -353,8 +353,8 @@ return [
 
             'review' => [
                 'index' => [
-                    'title' => 'Reviews',
-                    'page-title' => 'Reviews'
+                    'title' => 'Отзывы',
+                    'page-title' => 'Отзывы'
                 ],
 
                 'view' => [
@@ -368,7 +368,7 @@ return [
         'layered-nav-title' => 'Shop By',
         'price-label' => 'As low as',
         'remove-filter-link-title' => 'Clear All',
-        'sort-by' => 'Сортировать по',
+        'sort-by' => 'Sort By',
         'from-a-z' => 'From A-Z',
         'from-z-a' => 'From Z-A',
         'newest-first' => 'Newest First',
@@ -394,7 +394,7 @@ return [
         'add-to-cart' => 'Add To Cart',
         'buy-now' => 'Buy Now',
         'whoops' => 'Whoops!',
-        'quantity' => 'Количество',
+        'quantity' => 'Quantity',
         'in-stock' => 'In Stock',
         'out-of-stock' => 'Out Of Stock',
         'view-all' => 'View All',
@@ -403,7 +403,7 @@ return [
         'samples' => 'Samples',
         'links' => 'Links',
         'sample' => 'Sample',
-        'name' => 'Name',
+        'name' => 'Имя',
         'qty' => 'Qty',
         'starting-at' => 'Starting at',
         'customize-options' => 'Customize Options',
@@ -432,19 +432,19 @@ return [
                 'qty_impossible' => 'Cannot add more than one of these products to cart.'
             ],
             'create-error' => 'Encountered some issue while making cart instance.',
-            'title' => 'Корзина',
+            'title' => 'Shopping Cart',
             'empty' => 'Your shopping cart is empty',
             'update-cart' => 'Update Cart',
             'continue-shopping' => 'Continue Shopping',
             'proceed-to-checkout' => 'Proceed To Checkout',
-            'remove' => 'Убрать',
-            'remove-link' => 'Убрать',
+            'remove' => 'Remove',
+            'remove-link' => 'Remove',
             'move-to-wishlist' => 'Move to Wishlist',
             'move-to-wishlist-success' => 'Item moved to wishlist successfully.',
             'move-to-wishlist-error' => 'Cannot move item to wishlist, please try again later.',
             'add-config-warning' => 'Please select option before adding to cart.',
             'quantity' => [
-                'quantity' => 'Количество',
+                'quantity' => 'Quantity',
                 'success' => 'Cart Item(s) successfully updated.',
                 'illegal' => 'Quantity cannot be lesser than one.',
                 'inventory_warning' => 'The requested quantity is not available, please try again later.',
@@ -461,7 +461,10 @@ return [
             'cart-subtotal' => 'Cart Subtotal',
             'cart-remove-action' => 'Do you really want to do this ?',
             'partial-cart-update' => 'Only some of the product(s) were updated',
-            'link-missing' => ''
+            'link-missing' => '',
+            'event' => [
+                'expired' => 'This event has been expired.'
+            ]
         ],
 
         'onepage' => [
@@ -471,13 +474,13 @@ return [
             'payment' => 'Payment',
             'complete' => 'Complete',
             'billing-address' => 'Billing Address',
-            'sign-in' => 'Sign In',
+            'sign-in' => 'Войти',
             'company-name' => 'Company Name',
             'first-name' => 'Имя',
-            'last-name' => 'Last Name',
+            'last-name' => 'Фамилия',
             'email' => 'Email',
             'address1' => 'Street Address',
-            'city' => 'Город',
+            'city' => 'City',
             'state' => 'State',
             'select-state' => 'Select a region, state or province',
             'postcode' => 'Zip/Postcode',
@@ -492,7 +495,7 @@ return [
             'payment-method' => 'Payment Method',
             'summary' => 'Order Summary',
             'price' => 'Price',
-            'quantity' => 'Количество',
+            'quantity' => 'Quantity',
             'billing-address' => 'Billing Address',
             'shipping-address' => 'Shipping Address',
             'contact' => 'Contact',
@@ -558,7 +561,7 @@ return [
             'shipping' => 'Shipping Method',
             'payment' => 'Payment Method',
             'price' => 'Price',
-            'quantity' => 'Количество',
+            'quantity' => 'Quantity',
             'subtotal' => 'Subtotal',
             'shipping-handling' => 'Shipping & Handling',
             'tax' => 'Tax',
