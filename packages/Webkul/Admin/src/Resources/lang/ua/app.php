@@ -577,7 +577,7 @@ return [
             'default_null_option' => 'Створити порожню опцію за замовчуванням',
         ],
         'families' => [
-            'title' => '"Сім'ї"',
+            'title' => "Сім'ї",
             'add-family-btn-title' => 'Add Family',
             'add-title' => 'Add Family',
             'edit-title' => 'Edit Family',
