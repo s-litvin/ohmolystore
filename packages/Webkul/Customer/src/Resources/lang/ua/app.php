@@ -2,19 +2,19 @@
 
 return [
     'wishlist' => [
-        'success' => 'Item Successfully Added To Wishlist',
-        'failure' => 'Item Cannot Be Added To Wishlist',
-        'already' => 'Item Already Present In Your Wishlist',
-        'removed' => 'Item Successfully Removed From Wishlist',
-        'remove-fail' => 'Item Cannot Be Removed From Wishlist',
-        'empty' => 'You Don\'t Have Any Items In Your Wishlist',
-        'select-options' => 'Need To Select Options Before Adding To Wishlist',
-        'remove-all-success' => 'All The Items From Your Wishlist Have Been Removed',
+        'success' => 'Товар успішно доданий до списку бажань',
+        'failure' => 'Товар не можна додати до списку бажань',
+        'already' => 'Товар вже присутній в вашому списку побажань',
+        'removed' => 'Товар успішно видалений зі списку бажань',
+        'remove-fail' => 'Товар неможливо видалити зі списку бажань',
+        'empty' => 'Ви не маєте жодних товарів у своєму списку бажань',
+        'select-options' => 'Потрібно вибрати параметри перед додаванням у список бажань',
+        'remove-all-success' => 'Усі елементи зі списку бажань вилучені',
     ],
     'reviews' => [
-        'empty' => 'You have not reviewed any of product yet'
+        'empty' => 'Ви ще не переглянули жоден товар'
     ],
     'forget_password' => [
-        'reset_link_sent' => 'We have e-mailed your reset password link.'
+        'reset_link_sent' => 'Ми надіслали електронною поштою ваше посилання для скидання пароля.'
     ]
 ];
