@@ -1,6 +1,6 @@
 <form data-vv-scope="address-form">
 
-    <div class="form-container" v-if="!this.new_billing_address">
+    <div class="form-container t" v-if="!this.new_billing_address">
         <div class="form-header mb-30">
             <span class="checkout-step-heading">{{ __('shop::app.checkout.onepage.billing-address') }}</span>
 
@@ -29,13 +29,13 @@
                             @{{ addresses.city }},
                         </li>
 
-                        <li class="mb-5">
+                        <!-- <li class="mb-5">
                             @{{ addresses.state }},
                         </li>
 
                         <li class="mb-15">
                             @{{ addresses.country }}  @{{ addresses.postcode }}
-                        </li>
+                        </li> -->
 
                         <li>
                             <b>{{ __('shop::app.customer.account.address.index.contact') }}</b> : @{{ addresses.phone }}
