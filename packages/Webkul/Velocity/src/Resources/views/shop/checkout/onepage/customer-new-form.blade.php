@@ -64,14 +64,14 @@
         </div>
 
         <div :class="`col-12 form-field ${errors.has('address-form.shipping[address1][]') ? 'has-error' : ''}`" style="margin-bottom: 0;">
-            <label for="shipping_address_0" class="mandatory">
+            <label for="shipping_address_0">
                 {{ __('shop::app.checkout.onepage.address1') }}
             </label>
 
             <input
                 type="text"
                 class="control"
-                v-validate="'required'"
+                
                 id="shipping_address_0"
                 name="shipping[address1][]"
                 v-model="address.shipping.address1[0]"
@@ -195,7 +195,7 @@
         </div> -->
 
         <div :class="`col-12 form-field ${errors.has('address-form.shipping[postcode]') ? 'has-error' : ''}`">
-            <label for="shipping[postcode]" class="mandatory">
+            <label for="shipping[postcode]">
                 {{ __('shop::app.checkout.onepage.postcode') }}
             </label>
 
@@ -203,7 +203,7 @@
                 type="text"
                 class="control"
                 id="shipping[postcode]"
-                v-validate="'required'"
+                
                 name="shipping[postcode]"
                 v-model="address.shipping.postcode"
                 @change="validateForm('address-form')"
