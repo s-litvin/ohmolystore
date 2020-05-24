@@ -129,8 +129,8 @@
                         new_shipping_address: false,
                         selected_payment_method: '',
                         selected_shipping_method: '',
-                        // country: @json(core()->countries()),
-                        // countryStates: @json(core()->groupedStatesByCountries()),
+                        country: @json(core()->countries()),
+                        countryStates: @json(core()->groupedStatesByCountries()),
 
                         step_numbers: {
                             'information': 1,
@@ -170,15 +170,15 @@
                         } else {
                             this.allAddress = customerAddress;
 
-                            // for (var country in this.country) {
-                            //     for (var code in this.allAddress) {
-                            //         if (this.allAddress[code].country) {
-                            //             if (this.allAddress[code].country == this.country[country].code) {
-                            //                 this.allAddress[code]['country'] = this.country[country].name;
-                            //             }
-                            //         }
-                            //     }
-                            // }
+                            for (var country in this.country) {
+                                for (var code in this.allAddress) {
+                                    if (this.allAddress[code].country) {
+                                        if (this.allAddress[code].country == this.country[country].code) {
+                                            this.allAddress[code]['country'] = this.country[country].name;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 },
@@ -192,10 +192,9 @@
                     },
 
                     haveStates: function (addressType) {
-                        // if (this.countryStates[this.address[addressType].country] && this.countryStates[this.address[addressType].country].length)
-                        //     return true;
+                        if (this.countryStates[this.address[addressType].country] && this.countryStates[this.address[addressType].country].length)
+                            return true;
 
-                        return true;
                         return false;
                     },
 
@@ -206,7 +205,7 @@
                             isManualValidationFail = this.validateAddressForm();
                         }
 
-                        if (true || ! isManualValidationFail) {
+                        if (! isManualValidationFail) {
                             this.$validator.validateAll(scope)
                             .then(result => {
                                 if (result) {
