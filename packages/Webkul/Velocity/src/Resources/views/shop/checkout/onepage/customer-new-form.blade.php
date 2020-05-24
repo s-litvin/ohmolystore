@@ -120,7 +120,7 @@
             </span>
         </div>
 
-        <div :class="`col-12 form-field ${errors.has('address-form.shipping[country]') ? 'has-error' : ''}`">
+      <!--   <div :class="`col-12 form-field ${errors.has('address-form.shipping[country]') ? 'has-error' : ''}`">
             <label for="shipping[country]" class="mandatory">
                 {{ __('shop::app.checkout.onepage.country') }}
             </label>
@@ -149,10 +149,10 @@
             <span class="control-error" v-if="errors.has('address-form.shipping[country]')">
                 @{{ errors.first('address-form.shipping[country]') }}
             </span>
-        </div>
+        </div> -->
 
 
-        <div :class="`col-12 form-field ${errors.has('address-form.shipping[state]') ? 'has-error' : ''}`">
+        <!-- <div :class="`col-12 form-field ${errors.has('address-form.shipping[state]') ? 'has-error' : ''}`">
             <label for="shipping[state]" class="mandatory">
                 {{ __('shop::app.checkout.onepage.state') }}
             </label>
@@ -192,7 +192,7 @@
             <span class="control-error" v-if="errors.has('address-form.shipping[state]')">
                 @{{ errors.first('address-form.shipping[state]') }}
             </span>
-        </div>
+        </div> -->
 
         <div :class="`col-12 form-field ${errors.has('address-form.shipping[postcode]') ? 'has-error' : ''}`">
             <label for="shipping[postcode]" class="mandatory">
@@ -253,7 +253,7 @@
         @endauth
 
     @elseif (isset($billing) && $billing)
-        <div :class="`col-12 form-field ${errors.has('address-form.billing[company_name]') ? 'has-error' : ''}`">
+       <!--  <div :class="`col-12 form-field ${errors.has('address-form.billing[company_name]') ? 'has-error' : ''}`">
             <label for="billing[company_name]">
                 {{ __('shop::app.checkout.onepage.company-name') }}
             </label>
@@ -270,7 +270,7 @@
             <span class="control-error" v-if="errors.has('address-form.billing[company_name]')">
                 @{{ errors.first('address-form.billing[company_name]') }}
             </span>
-        </div>
+        </div> -->
 
         <div :class="`col-12 form-field ${errors.has('address-form.billing[first_name]') ? 'has-error' : ''}`">
             <label for="billing[first_name]" class="mandatory">
@@ -394,7 +394,7 @@
             </span>
         </div>
 
-        <div :class="`col-12 form-field ${errors.has('address-form.billing[country]') ? 'has-error' : ''}`">
+        <!-- <div :class="`col-12 form-field ${errors.has('address-form.billing[country]') ? 'has-error' : ''}`">
             <label for="billing[country]" class="mandatory">
                 {{ __('shop::app.checkout.onepage.country') }}
             </label>
@@ -423,9 +423,9 @@
             <span class="control-error" v-if="errors.has('address-form.billing[country]')">
                 @{{ errors.first('address-form.billing[country]') }}
             </span>
-        </div>
+        </div> -->
 
-        <div :class="`col-12 form-field ${errors.has('address-form.billing[state]') ? 'has-error' : ''}`">
+        <!-- <div :class="`col-12 form-field ${errors.has('address-form.billing[state]') ? 'has-error' : ''}`">
             <label for="billing[state]" class="mandatory">
                 {{ __('shop::app.checkout.onepage.state') }}
             </label>
@@ -464,7 +464,7 @@
             <span class="control-error" v-if="errors.has('address-form.billing[state]')">
                 @{{ errors.first('address-form.billing[state]') }}
             </span>
-        </div>
+        </div> -->
 
         <div :class="`col-12 form-field ${errors.has('address-form.billing[postcode]') ? 'has-error' : ''}`">
             <label for="billing[postcode]" class="mandatory">
