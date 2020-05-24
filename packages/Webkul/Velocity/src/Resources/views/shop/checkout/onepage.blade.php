@@ -206,7 +206,7 @@
                             isManualValidationFail = this.validateAddressForm();
                         }
 
-                        if (! isManualValidationFail) {
+                        if (true || ! isManualValidationFail) {
                             this.$validator.validateAll(scope)
                             .then(result => {
                                 if (result) {
