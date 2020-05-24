@@ -93,7 +93,7 @@
             @include('shop::checkout.onepage.customer-checkout')
         @endif
 
-        <div class="control-group" :class="[errors.has('address-form.billing[company_name]') ? 'has-error' : '']">
+<!--         <div class="control-group" :class="[errors.has('address-form.billing[company_name]') ? 'has-error' : '']">
             <label for="billing[company_name]">
                 {{ __('shop::app.checkout.onepage.company-name') }}
             </label>
@@ -103,7 +103,7 @@
             <span class="control-error" v-if="errors.has('address-form.billing[company_name]')">
                 @{{ errors.first('address-form.billing[company_name]') }}
             </span>
-        </div>
+        </div> -->
 
         <div class="control-group" :class="[errors.has('address-form.billing[first_name]') ? 'has-error' : '']">
             <label for="billing[first_name]" class="required">
@@ -161,8 +161,8 @@
             </span>
         </div>
 
-        <div class="control-group" :class="[errors.has('address-form.billing[state]') ? 'has-error' : '']">
-            <label for="billing[state]" class="required">
+        <!-- <div class="control-group" :class="[errors.has('address-form.billing[state]') ? 'has-error' : '']">
+            <label for="billing[state]">
                 {{ __('shop::app.checkout.onepage.state') }}
             </label>
 
@@ -181,7 +181,7 @@
             <span class="control-error" v-if="errors.has('address-form.billing[state]')">
                 @{{ errors.first('address-form.billing[state]') }}
             </span>
-        </div>
+        </div> -->
 
         <div class="control-group" :class="[errors.has('address-form.billing[postcode]') ? 'has-error' : '']">
             <label for="billing[postcode]" class="required">
@@ -195,7 +195,7 @@
             </span>
         </div>
 
-        <div class="control-group" :class="[errors.has('address-form.billing[country]') ? 'has-error' : '']">
+<!--         <div class="control-group" :class="[errors.has('address-form.billing[country]') ? 'has-error' : '']">
             <label for="billing[country]" class="required">
                 {{ __('shop::app.checkout.onepage.country') }}
             </label>
@@ -213,7 +213,7 @@
             <span class="control-error" v-if="errors.has('address-form.billing[country]')">
                 @{{ errors.first('address-form.billing[country]') }}
             </span>
-        </div>
+        </div> -->
 
         <div class="control-group" :class="[errors.has('address-form.billing[phone]') ? 'has-error' : '']">
             <label for="billing[phone]" class="required">
@@ -281,13 +281,13 @@
                                 @{{ addresses.city }},
                             </li>
 
-                            <li class="mb-5">
+                            <!-- <li class="mb-5">
                                 @{{ addresses.state }},
                             </li>
 
                             <li class="mb-15">
                                 @{{ addresses.country }} @{{ addresses.postcode }}
-                            </li>
+                            </li> -->
 
                             <li>
                                 <b>{{ __('shop::app.customer.account.address.index.contact') }}</b> : @{{ addresses.phone }}
@@ -386,7 +386,7 @@
                 </span>
             </div>
 
-            <div class="control-group" :class="[errors.has('address-form.shipping[state]') ? 'has-error' : '']">
+            <!-- <div class="control-group" :class="[errors.has('address-form.shipping[state]') ? 'has-error' : '']">
                 <label for="shipping[state]" class="required">
                     {{ __('shop::app.checkout.onepage.state') }}
                 </label>
@@ -407,9 +407,9 @@
                 <span class="control-error" v-if="errors.has('address-form.shipping[state]')">
                     @{{ errors.first('address-form.shipping[state]') }}
                 </span>
-            </div>
+            </div> -->
 
-            <div class="control-group" :class="[errors.has('address-form.shipping[postcode]') ? 'has-error' : '']">
+            <!-- <div class="control-group" :class="[errors.has('address-form.shipping[postcode]') ? 'has-error' : '']">
                 <label for="shipping[postcode]" class="required">
                     {{ __('shop::app.checkout.onepage.postcode') }}
                 </label>
@@ -419,9 +419,9 @@
                 <span class="control-error" v-if="errors.has('address-form.shipping[postcode]')">
                     @{{ errors.first('address-form.shipping[postcode]') }}
                 </span>
-            </div>
+            </div> -->
 
-            <div class="control-group" :class="[errors.has('address-form.shipping[country]') ? 'has-error' : '']">
+            <!-- <div class="control-group" :class="[errors.has('address-form.shipping[country]') ? 'has-error' : '']">
                 <label for="shipping[country]" class="required">
                     {{ __('shop::app.checkout.onepage.country') }}
                 </label>
@@ -437,7 +437,7 @@
                 <span class="control-error" v-if="errors.has('address-form.shipping[country]')">
                     @{{ errors.first('address-form.shipping[country]') }}
                 </span>
-            </div>
+            </div> -->
 
             <div class="control-group" :class="[errors.has('address-form.shipping[phone]') ? 'has-error' : '']">
                 <label for="shipping[phone]" class="required">
