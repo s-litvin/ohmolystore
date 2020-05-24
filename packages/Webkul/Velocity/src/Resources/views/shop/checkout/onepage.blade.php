@@ -195,6 +195,7 @@
                         // if (this.countryStates[this.address[addressType].country] && this.countryStates[this.address[addressType].country].length)
                         //     return true;
 
+                        return true;
                         return false;
                     },
 
