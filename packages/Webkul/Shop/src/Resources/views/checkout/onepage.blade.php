@@ -1,5 +1,5 @@
 @php
-diw('dsfsdf');
+die('dsfsdf');
 @endphp 
 @extends('shop::layouts.master')
 
