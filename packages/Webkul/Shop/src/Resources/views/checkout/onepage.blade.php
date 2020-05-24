@@ -1,3 +1,6 @@
+@php
+diw('dsfsdf');
+@endphp 
 @extends('shop::layouts.master')
 
 @section('page_title')

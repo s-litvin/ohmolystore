@@ -19,7 +19,7 @@
 
                 <div class="col-lg-7 col-md-12">
                     <div class="step-content information" id="address-section">
-                        @include('shop::checkout.onepage.customer-info7')
+                        @include('shop::checkout.onepage.customer-info')
                     </div>
 
                     <div
