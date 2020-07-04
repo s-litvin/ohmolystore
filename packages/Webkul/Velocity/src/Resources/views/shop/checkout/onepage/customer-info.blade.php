@@ -6,7 +6,7 @@
 
             <div class="form-header mb-30" slot="header">
                 <h3 class="fw6 display-inbl">
-                    {{ __('shop::app.checkout.onepage.billing-address') }}
+                    {{ __('shop::app.checkout.onepage.billing-address') }} 33333
                 </h3>
                 <i class="rango-arrow"></i>
             </div>
