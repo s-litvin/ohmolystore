@@ -254,11 +254,11 @@
                             form.find(':input').each((index, element) => {
                                 let value = $(element).val();
                                 let elementId = element.id;
-
+                console.log(element.id);
                                 if (value == ""
                                     && element.id != 'billing[company_name]'
                                     && element.id != 'shipping[company_name]'
-                                ) {
+                                      ) {
                                     // check for multiple line address
                                     if (elementId.match('billing_address_')
                                         || elementId.match('shipping_address_')

@@ -11,32 +11,7 @@
 
         <div slot="body">
             <div class="address-summary row">
-                @if ($billingAddress = $cart->billing_address)
-                    <div class="billing-address col-lg-6 col-md-12">
-                        <div class="card-title mb-20">
-                            <b>{{ __('shop::app.checkout.onepage.billing-address') }}</b>
-                        </div>
-
-                        <div class="card-content">
-                            <ul type="none">
-                                <li>
-                                    {{ $billingAddress->name }}
-                                </li><br />
-                                <li>
-                                    {{ $billingAddress->address1 }}, <br />{{ $billingAddress->state }}
-                                </li><br />
-                                <li>
-                                    {{ core()->country_name($billingAddress->country) }} {{ $billingAddress->postcode }}
-                                </li><br />
-
-                                <li>
-                                    {{ __('shop::app.checkout.onepage.contact') }} : {{ $billingAddress->phone }}
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                @endif
-
+                
                 @if ($cart->haveStockableItems() && $shippingAddress = $cart->shipping_address)
                     <div class="shipping-address col-6">
                         <div class="card-title mb-20">
@@ -49,12 +24,8 @@
                                     {{ $shippingAddress->name }}
                                 </li><br/>
                                 <li>
-                                    {{ $shippingAddress->address1 }},<br/> {{ $shippingAddress->state }}
+                                    {{ $shippingAddress->address1 }},
                                 </li><br/>
-                                <li>
-                                    {{ core()->country_name($shippingAddress->country) }} {{ $shippingAddress->postcode }}
-                                </li><br/>
-
                                 <li>
                                     {{ __('shop::app.checkout.onepage.contact') }} : {{ $shippingAddress->phone }}
                                 </li>
