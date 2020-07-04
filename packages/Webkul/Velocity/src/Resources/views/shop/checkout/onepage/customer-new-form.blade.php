@@ -255,7 +255,7 @@
     @elseif (isset($billing) && $billing)
         <div :class="`col-12 form-field ${errors.has('address-form.billing[company_name]') ? 'has-error' : ''}`">
             <label for="billing[company_name]">
-                {{ __('shop::app.checkout.onepage.company-name') }}
+                {{ __('shop::app.checkout.onepage.order_comment') }}
             </label>
 
             <input
@@ -340,7 +340,7 @@
 
         <div :class="`col-12 form-field ${errors.has('address-form.billing[address1][]') ? 'has-error' : ''}`" style="margin-bottom: 0;">
             <label for="billing_address_0" class="mandatory">
-                {{ __('shop::app.checkout.onepage.address1') }}
+                {{ __('shop::app.checkout.onepage.delivery_stock_number') }}
             </label>
 
             <input

@@ -480,6 +480,8 @@ return [
             'last-name' => 'Прізвище',
             'email' => 'Email',
             'address1' => 'Вулиця',
+            'order_comment' => 'Коментар к замовленню',
+            'delivery_stock_number' => 'Місто та номер складу доставки',
             'city' => 'Місто',
             'state' => 'Держава',
             'select-state' => 'Виберіть регіон, штат чи провінцію',

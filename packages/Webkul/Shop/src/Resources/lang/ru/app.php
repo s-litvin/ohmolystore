@@ -480,6 +480,8 @@ return [
             'last-name' => 'Фамилия',
             'email' => 'Email',
             'address1' => 'Название улицы',
+            'order_comment' => 'Комментарий к заказу',
+            'delivery_stock_number' => 'Город и номер склада доставки',
             'city' => 'Область' ,
             'state' => 'Область',
             'select-state' => 'Выберите город или область',

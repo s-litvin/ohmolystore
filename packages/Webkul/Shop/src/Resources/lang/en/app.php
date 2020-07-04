@@ -480,6 +480,8 @@ return [
             'last-name' => 'Last Name',
             'email' => 'Email',
             'address1' => 'Street Address',
+            'order_comment' => 'Comment for order',
+            'delivery_stock_number' => 'Delivery stock address',
             'city' => 'City',
             'state' => 'State',
             'select-state' => 'Select a region, state or province',
