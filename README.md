@@ -19,7 +19,7 @@
 6. [Security Vulnerabilities](#security-vulnerabilities)
 7. [Miscellaneous](#miscellaneous)
 
-### Introduction.
+### Introduction
 
 [Bagisto](https://www.bagisto.com) is a hand tailored E-Commerce framework built on some of the hottest opensource technologies
 such as [Laravel](https://laravel.com) (a [PHP](https://secure.php.net/) framework) and [Vue.js](https://vuejs.org)
