@@ -69,6 +69,8 @@
         src="https://www.facebook.com/tr?id=583958265859847&ev=PageView
         &noscript=1"/>
         </noscript>
+
+        <meta name="facebook-domain-verification" content="dkc32ydleo4uugrsvttlhrjplfe5ip" />
         <!-- End Facebook Pixel Code -->
 
     </head>
