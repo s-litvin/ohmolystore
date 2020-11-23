@@ -92,14 +92,14 @@
                     {{-- <product-quick-view-btn :quick-view-details="product"></product-quick-view-btn> --}}
             </a>
 
-            <div class="card-body asdasd">
+            <div class="card-body">
                 <div class="product-name col-12 no-padding">
                     <a
                         href="{{ route('shop.productOrCategory.index', $product->url_key) }}"
                         title="{{ $product->name }}"
                         class="unset">
 
-                        <span class="fs16">{{ $product->name }}</span>
+                        <span class="fs16">sdfsdfs{{ $product->name }}</span>
                     </a>
                 </div>
 				
