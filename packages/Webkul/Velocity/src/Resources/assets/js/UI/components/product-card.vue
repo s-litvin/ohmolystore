@@ -14,7 +14,7 @@
             <div>
                 <div class="product-name">
                     <a :href="`${baseUrl}/${product.slug}`" :title="product.name" class="unset">
-                        <span class="fs16">{{ product.name }}</span>
+                        <span class="fs16">asdf321{{ product.name }}</span>
                     </a>
                 </div>
 
@@ -55,7 +55,7 @@
                     :title="product.name"
                     :href="`${baseUrl}/${product.slug}`">
 
-                    <span class="fs16">{{ product.name }}</span>
+                    <span class="fs16">asdf443342{{ product.name }}</span>
                 </a>
             </div>
 
