@@ -92,7 +92,7 @@
                     {{-- <product-quick-view-btn :quick-view-details="product"></product-quick-view-btn> --}}
             </a>
 
-            <div class="card-body">
+            <div class="card-body asdasd">
                 <div class="product-name col-12 no-padding">
                     <a
                         href="{{ route('shop.productOrCategory.index', $product->url_key) }}"
@@ -103,7 +103,7 @@
                     </a>
                 </div>
 				
-                <div class="product-price fs16 asdf">
+                <div class="product-price fs16">
                     @include ('shop::products.price', ['product' => $product])
                 </div>
 
