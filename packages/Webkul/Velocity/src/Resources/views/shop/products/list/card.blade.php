@@ -102,6 +102,10 @@
                         <span class="fs16">{{ $product->name }}</span>
                     </a>
                 </div>
+				
+				<div class="product-price fs16">
+                    @include ('shop::products.price', ['product' => $product])
+                </div>
 
                 <div class="product-price fs16">
                     @include ('shop::products.price', ['product' => $product])
