@@ -23,7 +23,7 @@
         <div class="product-name">
             <a href="{{ route('shop.productOrCategory.index', $product->url_key) }}" title="{{ $product->name }}">
                 <span>
-                    {{ $product->name }}
+                    1.{{ $product->name }}
                 </span>
             </a>
         </div>
