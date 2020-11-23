@@ -103,11 +103,7 @@
                     </a>
                 </div>
 				
-				<div class="sdfsdfsdf">
-                   fsdf sdf sd
-                </div>
-
-                <div class="product-price fs16">
+                <div class="product-price fs16 asdf">
                     @include ('shop::products.price', ['product' => $product])
                 </div>
 
