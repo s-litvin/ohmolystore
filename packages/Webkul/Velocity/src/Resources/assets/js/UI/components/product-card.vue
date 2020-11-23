@@ -71,6 +71,10 @@
                 </a>
             </div>
 
+            <div class="product-rating col-12 no-padding">
+                <span class="fs14" v-text="product.shortDescription"></span>
+            </div>
+			
             <div class="product-rating col-12 no-padding" v-else>
                 <span class="fs14" v-text="product.firstReviewText"></span>
             </div>

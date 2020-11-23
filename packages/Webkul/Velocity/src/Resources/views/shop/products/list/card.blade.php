@@ -30,7 +30,7 @@
 
 {!! view_render_event('bagisto.shop.products.list.card.before', ['product' => $product]) !!}
     @if (isset($list) && $list)
-        <div class="col-12 lg-card-container list-card product-card row asdf">
+        <div class="col-12 lg-card-container list-card product-card row">
             <div class="product-image">
                 <a
                     title="{{ $product->name }}"
@@ -76,7 +76,7 @@
             </div>
         </div>
     @else
-        <div class="card grid-card product-card-new fdsa">
+        <div class="card grid-card product-card-new">
             <a
                 href="{{ route('shop.productOrCategory.index', $product->url_key) }}"
                 title="{{ $product->name }}"
